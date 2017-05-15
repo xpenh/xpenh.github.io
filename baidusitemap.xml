@@ -4,15 +4,22 @@
 
     
   <url>
-    <loc>https://xpenh.github.io/2017/05/09/hello-world/</loc>
-    <lastmod>2017-05-09T07:29:29.203Z</lastmod>
+    <loc>https://xpenh.github.io/2017/05/15/%E5%AD%A6%E4%B9%A0%20-ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-05-15T07:01:01.860Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2017-05-09T07:29:29.203Z</pubTime>
+        <title>学习 -ECMAScript 6 -let命令</title>
+        <pubTime>2017-05-15T06:32:15.167Z</pubTime>
         
+        <tag>ES6</tag>
+         
+        <tag>javascript</tag>
+         
          
            
+             
+              <breadCrumb title="ES6" url="https://xpenh.github.io/categories/ES6/"/>
+          
         </display>
     </data>
     </url>

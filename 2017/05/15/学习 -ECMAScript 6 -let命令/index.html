@@ -9,7 +9,7 @@
     
     <title>
         
-            归档: 2017 | 
+            学习 -ECMAScript 6 -let命令 | 
         
         Xpenh&#39;s Blog
     </title>
@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="xpenh">
     <meta name="description" content="null">
-    <meta name="keywords" content="许鹏辉,xpenh,前端,web development,IT,程序员,代码">
+    <meta name="keywords" content="许鹏辉,xpenh,前端,web development,IT,程序员,代码,ES6,javascript">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -57,9 +57,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://xpenh.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2017 | Xpenh&#39;s Blog">
+    <meta property="og:title" content="学习 -ECMAScript 6 -let命令 | Xpenh&#39;s Blog">
     <meta property="og:description" content="null">
-    
+    <meta property="og:article:tag" content="ES6"> <meta property="og:article:tag" content="javascript"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -220,96 +220,236 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本用法"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本用法</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/05/15/学习 -ECMAScript 6 -let命令/">学习 -ECMAScript 6 -let命令</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ES6
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/05/15/学习 -ECMAScript 6 -let命令/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="xpenh's avatar">
-            </div>
-            <div>
-                <strong>xpenh</strong>
-                <span>5月 15, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/ES6/">ES6</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                学习 -ECMAScript 6 -let命令
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xpenh</strong>
+        <span>5月 15, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC1UlEQVR42u3bW27jQAwEQN//0rsHMCJ3cxREnil9GbEssyZACD7y+nfk9cLGxsbGxsbGxsZ+JPsVX+/3Jz+5/vn7u++vf3o3jxkbGxv7BPaHP/1lQNeBJpjr2NqYsbGxsc9hJ6klD/H6U3lCSn4NUTzY2NjY2HFJ0N6ZJzxsbGxs7LsS2KzwyI8gT5bY2NjY2MMGTXw0eSlyfc8f99KwsbGxH89uB71PeP0H821sbGzsR7Lba5ZgZuPhpLApIsfGxsbelD1bo1xpLa0sXOZ3Dntp2NjY2F/LbttGs7FuUuSsfOOHYQY2Njb2AexkNJs06NvU1T6zXdbExsbGPoe9MlJtS5rZuk9yENjY2Nhnsn971SZPV8lz2pIGGxsb+xx226DPmz6zxJPAiu/FxsbG3pS9snAzC71NUckhRmUVNjY29tbsltqOEPISol3KyePExsbG3pudFxizRZ+6ARQPlfOhAjY2Nvau7Dwh5UHkz29TY35Mw6kINjY29hey87JkJdDku/K1oaRowcbGxj6HnYfVFgY5cgauB8zY2NjYm7JX8PcOFdoCox4wYGNjY2/NngXRJrlkeDBrYEW/AGxsbOyt2bOA8neTBJncuTSowMbGxt6UPfuydinnmtc2oWZHjI2Njb0r+zdGAnm7f/3oi/EzNjY29gHs9t+Q2uTU8toYPowusLGxsbdmJ4/Ox67tp2Zj3RtKEWxsbOwt2O2a+/pyTxFoPK6oExg2Njb2RuzoA2X5kTwtf50kyNs2lbCxsbG/nN22eFZaP2050Q6DsbGxsc9hv+IrLw/aoFfWd7CxsbGx71rHWU947WCgPmJsbGzsA9h5QloZHuQpZ6WphI2NjY29Elw+9G3HEu0qDzY2NjZ2XirMGkDtEmc7bMbGxsY+jZ03hvJ0khc2s4EBNjY2NvZ6wlgZD+dHmSfdH5+PjY2NvSn7nAsbGxsbGxsbGxv7Mdd/25/Yu+g2QmgAAAAASUVORK5CYII=">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/ES6/">ES6</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/javascript/">javascript</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=学习 -ECMAScript 6 -let命令&url=https://xpenh.github.io//2017/05/15/学习 -ECMAScript 6 -let命令/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=学习 -ECMAScript 6 -let命令&url=https://xpenh.github.io//2017/05/15/学习 -ECMAScript 6 -let命令/index.html&via=xpenh" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://xpenh.github.io//2017/05/15/学习 -ECMAScript 6 -let命令/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://xpenh.github.io//2017/05/15/学习 -ECMAScript 6 -let命令/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">ES6</a> 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。</p>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="built_in">let</span> a = 10;</div><div class="line">  var b = 1;</div><div class="line">&#125;</div><div class="line"></div><div class="line">a // ReferenceError: a is not defined.</div><div class="line">b // 1</div></pre></td></tr></table></figure>
+<p>上面代码在代码块之中，分别用let和var声明了两个变量。然后在代码块之外调用这两个变量，结果let声明的变量报错，var声明的变量返回了正确的值。这表明，let声明的变量只在它所在的代码块有效。</p>
+<p>for循环的计数器，就很合适使用let命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 10; i++) &#123;&#125;</div><div class="line"></div><div class="line">console.log(i);</div><div class="line">//ReferenceError: i is not defined</div></pre></td></tr></table></figure></p>
+<p>上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。</p>
+<p>下面的代码如果使用var，最后输出的是10。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var a = [];</div><div class="line"><span class="keyword">for</span> (var i = 0; i &lt; 10; i++) &#123;</div><div class="line">  a[i] = <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">    console.log(i);</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line">a[6](); // 10</div></pre></td></tr></table></figure></p>
+<p>上面代码中，变量i是var声明的，在全局范围内都有效，所以全局只有一个变量i。每一次循环，变量i的值都会发生改变，而循环内被赋给数组a的function在运行时，会通过闭包读到这同一个变量i，导致最后输出的是最后一轮的i的值，也就是10。</p>
+<p>而如果使用let，声明的变量仅在块级作用域内有效，最后输出的是6。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var a = [];</div><div class="line"><span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 10; i++) &#123;</div><div class="line">  a[i] = <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">    console.log(i);</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line">a[6](); // 6</div></pre></td></tr></table></figure></p>
+<p>上面代码中，变量i是let声明的，当前的i只在本轮循环有效，所以每一次循环的i其实都是一个新的变量，所以最后输出的是6。你可能会问，如果每一轮循环的变量i都是重新声明的，那它怎么知道上一轮循环的值，从而计算出本轮循环的值？这是因为 JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量i时，就在上一轮循环的基础上进行计算。</p>
+<p>另外，for循环还有一个特别之处，就是循环语句部分是一个父作用域，而循环体内部是一个单独的子作用域。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="built_in">let</span> i = 0; i &lt; 3; i++) &#123;</div><div class="line">  <span class="built_in">let</span> i = <span class="string">'abc'</span>;</div><div class="line">  console.log(i);</div><div class="line">&#125;</div><div class="line">// abc</div><div class="line">// abc</div><div class="line">// abc</div></pre></td></tr></table></figure></p>
+<p>上面代码输出了3次abc，这表明函数内部的变量i和外部的变量i是分离的。<br><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">更多ES6学习。</a></p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
