@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[WebSocket与Socket.io的理解]]></title>
+    <url>%2F2017%2F05%2F19%2FWebSocket%E4%B8%8ESocket.io%E7%9A%84%E7%90%86%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[WebSocket protocol是HTML5一种新的协议。它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于服务器推送技术的一种。]]></content>
+      <categories>
+        <category>html5</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>html5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[学习 -ECMAScript 6 -let命令]]></title>
     <url>%2F2017%2F05%2F15%2F%E5%AD%A6%E4%B9%A0%20-ECMAScript%206%20-let%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。 基本用法1234567&#123; let a = 10; var b = 1;&#125;a // ReferenceError: a is not defined.b // 1 上面代码在代码块之中，分别用let和var声明了两个变量。然后在代码块之外调用这两个变量，结果let声明的变量报错，var声明的变量返回了正确的值。这表明，let声明的变量只在它所在的代码块有效。 for循环的计数器，就很合适使用let命令。1234for (let i = 0; i &lt; 10; i++) &#123;&#125;console.log(i);//ReferenceError: i is not defined 上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。 下面的代码如果使用var，最后输出的是10。1234567var a = [];for (var i = 0; i &lt; 10; i++) &#123; a[i] = function () &#123; console.log(i); &#125;;&#125;a[6](); // 10 上面代码中，变量i是var声明的，在全局范围内都有效，所以全局只有一个变量i。每一次循环，变量i的值都会发生改变，而循环内被赋给数组a的function在运行时，会通过闭包读到这同一个变量i，导致最后输出的是最后一轮的i的值，也就是10。 而如果使用let，声明的变量仅在块级作用域内有效，最后输出的是6。1234567var a = [];for (let i = 0; i &lt; 10; i++) &#123; a[i] = function () &#123; console.log(i); &#125;;&#125;a[6](); // 6 上面代码中，变量i是let声明的，当前的i只在本轮循环有效，所以每一次循环的i其实都是一个新的变量，所以最后输出的是6。你可能会问，如果每一轮循环的变量i都是重新声明的，那它怎么知道上一轮循环的值，从而计算出本轮循环的值？这是因为 JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量i时，就在上一轮循环的基础上进行计算。 另外，for循环还有一个特别之处，就是循环语句部分是一个父作用域，而循环体内部是一个单独的子作用域。1234567for (let i = 0; i &lt; 3; i++) &#123; let i = 'abc'; console.log(i);&#125;// abc// abc// abc 上面代码输出了3次abc，这表明函数内部的变量i和外部的变量i是分离的。更多ES6学习]]></content>
