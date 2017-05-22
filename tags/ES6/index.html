@@ -93,13 +93,13 @@
   #scheme-Paradox .sidebar_archives-count,
   #scheme-Paradox .sidebar-colored .sidebar-header,
   #scheme-Paradox .sidebar-colored .sidebar-badge{
-    background-color: #0097A7 !important;
+    background-color: #808182 !important;
   }
 
   /* Sidebar User Drop Down Menu Text Color */
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
   #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-    color: #0097A7 !important;
+    color: #808182 !important;
   }
 
   #post_entry-right-info,
@@ -112,7 +112,7 @@
   .sidebar-colored .sidebar-nav > .open > a:hover,
   .sidebar-colored .sidebar-nav > .open > a:focus,
   #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-    color: #0097A7 !important;
+    color: #808182 !important;
   }
 
   .toTop {
@@ -237,8 +237,8 @@
     <!-- Post Thumbnail -->
     
         
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <!-- Pure Thumbnail -->
+            <div class="post-thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:rgb(124, 167, 232) !important">
         
     
 
@@ -256,10 +256,9 @@
             <a href="/2017/05/15/学习 -ECMAScript 6 -let命令/" target="_self">阅读全文</a>
         </span>
     </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
+    <!-- Post_entry Info -->
+    <!-- <div id="post_entry-info">
         <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
             <div id="author-avatar">
                 <img src="/img/avatar.png" width="44px" height="44px" alt="xpenh's avatar">
             </div>
@@ -269,7 +268,6 @@
             </div>
         </div>
         <div id="post_entry-right-info">
-            <!-- Category -->
             <span class="post_entry-category">
                 <a class="post_category-link" href="/categories/ES6/">ES6</a>
             </span>
@@ -278,11 +276,10 @@
 
             
 
-            <!-- Post Views -->
             <span class="post_entry-views">
             </span>
         </div>
-    </div>
+    </div> -->
 </div>
 
             
@@ -298,7 +295,7 @@
 
     var locatePost = $('.locate-thumbnail-symbol').next();
     for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
+        randomNum = Math.floor(Math.random() * undefined + 1);
 
         locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
         locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
