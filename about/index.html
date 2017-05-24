@@ -9,6 +9,8 @@
     
     <title>
         
+            About Me | 
+        
         Xpenh&#39;s Blog
     </title>
 
@@ -55,7 +57,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://xpenh.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Xpenh&#39;s Blog">
+    <meta property="og:title" content="About Me | Xpenh&#39;s Blog">
     <meta property="og:description" content="null">
     
 
@@ -224,283 +226,185 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
+                    <!-- Post TOC -->
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
-        <!-- Paradox Header -->
-        <!-- Daily pic -->
-<div class="mdl-card mdl-shadow--2dp daily-pic mdl-cell mdl-cell--8-col index-top-block">
-
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.png)">
-        <p class="index-top-block-slogan"><a href="#">
         
-            
-                做生活的高手 
-            
+            <!-- Pure Thumbnail -->
+            <div class="post_thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:rgb(124, 167, 232) !important">
         
-        </a></p>
-    </div>
-
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>xpenh</strong>
-        </div>
-    </div>
-</div>
-
-        <!-- Blog info -->
-<div class="mdl-card mdl-shadow--2dp something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-
-    <!-- Search -->
     
-    <!-- Google -->
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-        <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-            <i class="material-icons mdl-color-text--white" role="presentation">search</i>
-        </label>
+            <p class="article-headline-p">
+                About Me
+            </p>
+        </div>
 
-        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-            <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
 
-            <input type="hidden" name="sitesearch" value="https://xpenh.github.io">
-        </form>
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xpenh</strong>
+        <span>5月 24, 2017</span>
     </div>
 
+    <div class="section-spacer"></div>
 
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
 
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB4ElEQVR42u3aQXKDMAwFUO5/6fYANPAlk6Gg51WGOkSvC41laft5xdowMDAwMDAwMP4NY4vXfv8fr949r74z2Y+BgTGTcZLadj/56eeP31l9fvIPwsDAGMnIwzqGJcn3ghgwMDAw4uCOv5v/FQMDA+N7CTd/kqdvDAwMjPUCMgni+Crt5locAwPjgYxqY+Abn2/ob2BgYDyEUR5xaBW6xwHdMDOCgYHxKEb1YJcc+K4a0ThpJ2BgYIxk5Ff/65f+eYnbrMUxMDBexMiPfXkCvXbA4iMMAwNjGKN3KbaeNPMSN0q4GBgYL2WsNANWRiV6x1AMDIzJjJXRh5Um6EoixsDAmMzoNSx7BfBK4xMDAwMjKSnzIKppOooQAwNjJKM35lUtTS8rgDEwMMYwrmo6JvvXSRgYGDMZ0aho8aI/3583UzEwMCYzqqs6crEyooGBgYFRbQ9Uw+0xkkMhBgbGTEY14a7vzw+XUQsTAwPj1YyVoa4kxN47m/0NDAyMVzOqV2C9i7nqhd1JIwEDA2MkozdaWi2Dq4m4PMCKgYExnpEf4/IQb0i4GBgYAxjNsrOVlDEwMDCqRWyeTFeu3r5+3YaBgfFAxlVDEr0mZbWExsDAmMZ47sLAwMDAwMDAuHX9AtwWXpOMD6KNAAAAAElFTkSuQmCC">
+        </ul>
+    
 
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
 
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
+    
 
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="http://uhhuh.me/" target="_blank">
-            <img src="/img/logo.png" alt="logo" />
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=About Me&url=https://xpenh.github.io//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
         </a>
-    </div>
+    
 
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>Xpenh&#39;s Blog</strong>
-        </div>
-        <div class="section-spacer"></div>
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=About Me&url=https://xpenh.github.io//about/index.html&via=xpenh" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
 
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-                <a class="index_share-link" href="/about" title="关于我">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        关于我
-                    </li>
-                </a>
-            
-        </ul>
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://xpenh.github.io//about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
 
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://xpenh.github.io//about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
 
-            
+    <!-- Share LinkedIn -->
+    
 
-            
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Xpenh&#39;s Blog&url=https://xpenh.github.io/&pic=&searchPic=false&style=simple" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到微博
-                    </li>
-                </a>
-            
+    <!-- Share QQ -->
+    
 
-            
-                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=Xpenh&#39;s Blog&url=https://xpenh.github.io/&via=xpenh" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Twitter
-                    </li>
-                </a>
-            
+    <!-- Share Telegram -->
+    
+</ul>
 
-            
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://xpenh.github.io//index.html" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Facebook
-                    </li>
-                </a>
-            
-
-            
-                <a class="index_share-link" href="https://plus.google.com/share?url=https://xpenh.github.io/" target="_blank">
-                    <li class="mdl-menu__item mdl-js-ripple-effect">
-                        分享到 Google+
-                    </li>
-                </a>
-            
-
-            
-
-            
-
-            
-        </ul>
-    </div>
 </div>
 
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-    <div class="locate-thumbnail-symbol"></div>
-
-    <!-- Pin on top -->
-    
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Pure Thumbnail -->
-            <div class="post-thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:rgb(124, 167, 232) !important">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/05/19/WebSocket与Socket.io的理解/">WebSocket与Socket.io的理解</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            WebSocket protocol是HTML5一种新的协议。它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/05/19/WebSocket与Socket.io的理解/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info -->
-    <!-- <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="xpenh's avatar">
-            </div>
-            <div>
-                <strong>xpenh</strong>
-                <span>5月 19, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/html5/">html5</a>
-            </span>
-
-            
-
-            
-
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div> -->
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Pure Thumbnail -->
-            <div class="post-thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:rgb(124, 167, 232) !important">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/05/15/学习 -ECMAScript 6 -let命令/">学习 -ECMAScript 6 -let命令</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ES6
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/05/15/学习 -ECMAScript 6 -let命令/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info -->
-    <!-- <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="xpenh's avatar">
-            </div>
-            <div>
-                <strong>xpenh</strong>
-                <span>5月 15, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/ES6/">ES6</a>
-            </span>
-
-            
-
-            
-
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div> -->
-</div>
-
-            
-            
-        
-    
+        <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p><a href="http://uhhuh.me/" target="_blank" rel="external">个人主站</a></p>
+<p>闲时补…</p>
 
     
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * undefined + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
-</script>
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -683,14 +587,6 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
-
-                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -852,12 +748,6 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    
-    <!-- Swiftye -->
-    
-
-    <!-- Local Search-->
-    
 
 
 <!-- Window Load-->
