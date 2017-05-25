@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xpenh.github.io/about/index.html</loc>
+    
+    <lastmod>2017-05-25T09:18:37.465Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xpenh.github.io/2017/05/19/WebSocket%E4%B8%8ESocket.io%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
     
     <lastmod>2017-05-25T07:28:34.665Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://xpenh.github.io/tags/index.html</loc>
     
     <lastmod>2017-05-24T09:47:16.584Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xpenh.github.io/about/index.html</loc>
-    
-    <lastmod>2017-05-24T08:13:44.131Z</lastmod>
     
   </url>
   
