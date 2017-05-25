@@ -3,6 +3,29 @@
 
 
     
+  <url>
+    <loc>https://xpenh.github.io/2017/05/15/%E5%AD%A6%E4%B9%A0%20-ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-05-25T03:05:57.036Z</lastmod>
+    <data>
+        <display>
+        <title>学习 -ECMAScript 6 -let命令</title>
+        <pubTime>2017-05-15T06:32:15.167Z</pubTime>
+        
+        <tag>ES6</tag>
+         
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES6" url="https://xpenh.github.io/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
   <url>
     <loc>https://xpenh.github.io/2017/05/19/WebSocket%E4%B8%8ESocket.io%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
@@ -20,28 +43,6 @@
            
              
               <breadCrumb title="html5" url="https://xpenh.github.io/categories/html5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://xpenh.github.io/2017/05/15/%E5%AD%A6%E4%B9%A0%20-ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2017-05-22T06:40:50.559Z</lastmod>
-    <data>
-        <display>
-        <title>学习 -ECMAScript 6 -let命令</title>
-        <pubTime>2017-05-15T06:32:15.167Z</pubTime>
-        
-        <tag>ES6</tag>
-         
-        <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="ES6" url="https://xpenh.github.io/categories/ES6/"/>
           
         </display>
     </data>

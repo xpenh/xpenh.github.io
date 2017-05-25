@@ -9,7 +9,7 @@
     
     <title>
         
-            标签: html | 
+            tags | 
         
         Xpenh&#39;s Blog
     </title>
@@ -59,7 +59,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://xpenh.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: html | Xpenh&#39;s Blog">
+    <meta property="og:title" content="tags | Xpenh&#39;s Blog">
     <meta property="og:description" content="null">
     
 
@@ -354,82 +354,63 @@
 
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
-    
-        
-    
 
-    <!-- Normal Post -->
-    
-        
-            
-            
-                <!-- Isolation Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post_entry Header -->
-    
-        <!-- Post Header Info -->
-        <div class="post_entry-header_info without-thumbnail">
-            <!-- Author Avatar & Name -->
-            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="xpenh's avatar">
-            <span class="name-span">xpenh</span>
-        </div>
+<!-- Layouts -->
 
-        <!-- Null Thumbnail -->
-        <div class="post_thumbnail-null">
-    
-        </div>
+    <!-- Tags Cloud -->
+    <style>
+    #bottom{
+        position: relative;
+    }
 
-    <!-- Post_entry Content -->
-    <div class="post_entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
-        <!-- Post Title -->
-        <p class="post_entry-title">
-            <a href="/2017/05/19/WebSocket与Socket.io的理解/">WebSocket与Socket.io的理解</a>
-        </p>
+    @media screen and (max-width: 480px) {
+        .material-tagscloud{
+            margin: 6em 2em 0;
+        }
+    }
 
-        <!-- Post Excerpt -->
-        <p class="post_entry-excerpt">
-            
-                WebSocket protocol是HTML5一种新的协议。它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是...
-            
-            &nbsp;&nbsp;&nbsp;
-            <span>
-                <a href="/2017/05/19/WebSocket与Socket.io的理解/" target="_self">Continue Reading</a>
-            </span>
-        </p>
+    .material-tagscloud a{
+        text-decoration:none;
+        padding: 1px 9px;
+        margin: 9px 1px;
+        line-height: 40px;
+        white-space: nowrap;
+        transition: .6s;
+        opacity: .85;
+    }
 
-        <!-- Post Tags -->
-        <ul class="post_entry-tags-list"><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/html/">html</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/html5/">html5</a></li></ul>
-    </div>
+    .material-tagscloud a:hover{
+        transition: .6s;
+        opacity: 1;
+        background: #FAFAFA;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    }
+</style>
 
-    <!-- Post_entry Footer -->
-    <div class="post_entry-footer">
-        <div class="post_entry-footer-border"></div>
-        <div class="post_entry-footer-info">
-            <div class="post_entry-footer-date">
-                5月 19, 2017
-            </div>
-            <div class="post_entry-footer-comment">
-                
-                
-            </div>
-        </div>
+<div class=" material-tagscloud">
+    <div class="material-post mdl-grid">
+        <a href="/tags/ES6/" style="font-size: 16px; color: #757575">ES6</a> <a href="/tags/html/" style="font-size: 16px; color: #757575">html</a> <a href="/tags/html5/" style="font-size: 16px; color: #757575">html5</a> <a href="/tags/javascript/" style="font-size: 16px; color: #757575">javascript</a>
     </div>
 </div>
 
-            
-        
-    
 
-    
+<script>
+    var adjustFooter = function() {
+        if( ($('#bottom').offset().top + $('#bottom').outerHeight() ) < $(window).height() ) {
+            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
+            $('#bottom').css('bottom', '-' + footerBottom + 'px');
+        }
+    };
 
-    
-</div>
+    $(document).ready(function() {
+        adjustFooter();
+    });
+</script>
+
+
+
 
 
                     

@@ -20,6 +20,8 @@
     <!-- dns prefetch -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
     
+        <link rel="dns-prefetch" href="https://xpenh.github.io"/>
+    
     
     
     
@@ -34,9 +36,9 @@
     <meta name="keywords" content="许鹏辉,xpenh,blog,前端,web development,IT,程序员,代码,html,html5">
 
     <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="192x192" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
 
     <!--iOS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -71,8 +73,8 @@
 
     <!-- Import CSS & jQuery -->
     
-        <link rel="stylesheet" href="/css/material.min.css">
-        <link rel="stylesheet" href="/css/style.min.css">
+        <link rel="stylesheet" href="https://xpenh.github.io/css/material.min.css">
+        <link rel="stylesheet" href="https://xpenh.github.io/css/style.min.css">
         <!-- Config CSS -->
 
 
@@ -83,7 +85,7 @@
   }
 
   a {
-    color: #00838F;
+    color: #EEB405;
   }
 
   .mdl-card__media,
@@ -134,7 +136,7 @@
   }
 
   .post-toc a:hover {
-    color: #00838F;
+    color: #EEB405;
     text-decoration: underline;
   }
 
@@ -176,8 +178,8 @@
     </style>
 
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/queue.js"></script>
+        <script src="https://xpenh.github.io/js/jquery.min.js"></script>
+        <script src="https://xpenh.github.io/js/queue.js"></script>
     
 
     <!-- UC Browser Compatible -->
@@ -205,12 +207,143 @@
 
     <!-- Custom Head -->
     
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
     
-        <body id="scheme-Paradox" class="lazy">
+        <body id="scheme-Isolation" class="lazy">
             <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+                    <!-- Isolation Header -->
+                    <header class="header">
+    <div class="header-wrapper">
+        <!-- Header Copyright -->
+        <div class="header-copyright">
+            <div class="header-site">
+                ©&nbsp;
+                <script type="text/javascript">
+                    var fd = new Date();
+                    document.write(fd.getFullYear());
+                </script>
+                &nbsp;Xpenh's Blog
+            </div>
+            <!--
+            I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+            It will not impact the appearance and can give developers a lot of support :)
+
+            很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+            它不会影响美观并可以给开发者很大的支持。 :)
+            -->
+            <div>
+                Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a>
+                <br>
+                Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a>
+            </div>
+        </div>
+
+        <!-- Header Title -->
+        <span class="header-title header-item">
+            <a href="/" title="Xpenh&#39;s Blog">
+                Xpenh&#39;s Blog
+            </a>
+        </span>
+
+        <p class="header-slogan header-item">
+        
+            
+                做生活的高手 
+            
+        
+        </p>
+
+        <!-- Header Nav -->
+        <nav class="header-nav header-item">
+            <span class="header-nav-item">
+                <a href="/" title="Home">
+                    <span>HOME</span>
+                </a>
+            </span>
+
+            <!-- Pages  -->
+            
+                <span class="header-nav-item">
+                    <a href="/tags" title="TAGS">
+                        <span>TAGS</span>
+                    </a>
+                </span>
+            
+                <span class="header-nav-item">
+                    <a href="/about" title="ABOUT">
+                        <span>ABOUT</span>
+                    </a>
+                </span>
+            
+                <span class="header-nav-item">
+                    <a href="http://uhhuh.me/" title="XPENH">
+                        <span>XPENH</span>
+                    </a>
+                </span>
+            
+
+        </nav>
+
+        <!-- Header SNS -->
+        <div class="header-item header-sns_list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/iamxph" target="_blank">
+            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://plus.google.com/" target="_blank">
+            <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- Weibo -->
+    
+        <a href="http://weibo.com/274957777" target="_blank">
+            <i class="fa fa-weibo fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- Instagram -->
+    
+        <a href="https://www.instagram.com/11.23.93/" target="_blank">
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/xpenh" target="_blank">
+            <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+        </a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+    </div>
+</header>
+
                 
 
                 <!-- Main Container -->
@@ -220,47 +353,10 @@
                     <div id="top"></div>
 
                     
-                        <!-- Hamburger Button -->
-                        <button class="MD-burger-icon sidebar-toggle">
-                            <span class="MD-burger-layer"></span>
-                        </button>
-                    
 
                     <!-- Post TOC -->
 
     
-    <!-- Back Button -->
-    <!--
-    <div class="material-back" id="backhome-div" tabindex="0">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
-           href="#" onclick="window.history.back();return false;"
-           target="_self"
-           role="button"
-           data-upgraded=",MaterialButton,MaterialRipple">
-            <i class="material-icons" role="presentation">arrow_back</i>
-            <span class="mdl-button__ripple-container">
-                <span class="mdl-ripple"></span>
-            </span>
-        </a>
-    </div>
-    -->
-
-    <!-- Left aligned menu below button -->
-    <button id="post-toc-trigger-btn"
-        class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
-
-        <!--
-        <li class="mdl-menu__item">
-            Some Action
-        </li>
-        -->
-    </ul>
-
 
 
 
@@ -274,134 +370,37 @@
 
                 <!-- Post Header(Thumbnail & Title) -->
                 
-    <!-- Paradox Post Header -->
+
+
+    <!-- Isolation Post Header -->
+    <!-- Post thumbnail -->
     
-        
-            <!-- Pure Thumbnail -->
-            <div class="post_thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:rgb(124, 167, 232) !important">
-        
+        <!-- Post Header Info -->
+        <div class="post-header_info without-thumbnail">
+            <!-- Author Avatar & Name -->
+            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="xpenh's avatar">
+            <span class="name-span">xpenh</span>
+        </div>
+
+        <!-- Null Thumbnail -->
+        <div class="post_thumbnail-null">
     
-            <p class="article-headline-p">
-                WebSocket与Socket.io的理解
-            </p>
         </div>
 
 
-
-
-
-                
-                    <!-- Paradox Post Info -->
-                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
-
-    <!-- Author Avatar -->
-    <div id="author-avatar">
-        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
-    </div>
-    <!-- Author Name & Date -->
-    <div>
-        <strong>xpenh</strong>
-        <span>5月 19, 2017</span>
-    </div>
-
-    <div class="section-spacer"></div>
-
-    <!-- Favorite -->
-    <!--
-        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
-            <i class="material-icons" role="presentation">favorite</i>
-            <span class="visuallyhidden">favorites</span>
-        </button>
-    -->
-
-    <!-- Qrcode -->
-    
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">devices other</i>
-            <span class="visuallyhidden">devices other</span>
-        </button>
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
-            <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC00lEQVR42u3awU7DMBAE0P7/T5crUpUwuxuU1H45oVJSvyAxeMev95bXCxsbGxsbGxsbG/uR7Fd8/X7/5x0OP+zjZ8/vf7623pqxsbGxd2D/8af/gH3+OHJ2Du6tGRsbG3sfdhJa+dLPAy8Pp+RxR0GLjY2NjV3cfuQbm/xBY2NjY2NfFWDVbcD8/tjY2NjYVw2VjhjJ6+fvyWPyhlkaNjY29uPZvaL33q9v67exsbGxH8aeXL3KNq9v8xIiWi02Njb2ouy8iK0egpxvbKrbldHhS2xsbOyl2ZPF5dGVkHrRiI2Njb02Oxno59FV3ULkFXK1Ho6GStjY2NjLsc8XnY+Q5uGUrK38idjY2NibsRPMpAzobTkuO7KDjY2NvRD7PB6q46Tq9iYvJCYHPbGxsbF3YPcG95Ml5sHWK5uxsbGxd2NXI6EaS9VPzGvjwrAJGxsbe2n2fw/9kxDKa4P8oWNjY2PvzK4Wvcl387jq/TIuGCphY2NjfyG7emim+lCqA6l8mFUtg7GxsbH3YVdDqLfESdlQ3dJgY2Njr82uVq298EsirTeWKtTG2NjY2Iuy8yH7hJcHXnLnavRiY2Njr83u/bvfqwGqATkaIc2LXmxsbOwvZPeCrfdKryquDp6wsbGxsXuFQfWR9QK1XE5jY2Njb8POIyEvCfKxUXX0P2pFsLGxsZdj95Z1VTFcHWnlr2BjY2PvwJ4/iHxwnw+hkkdfKAywsbGxN2NPBj2TAOvVA+/gwsbGxl6VXb2qR3aqgdcbSEUVBTY2Nvai7AuOwrSObE5ir7nVwcbGxl6anYdHdeSUf/eqsqEQYNjY2NjLsZPQiirV4sZjHnujWRo2Njb2luzRxwd3SyIt365gY2NjYyeHaSbvnBQJ+bAJGxsbewd2XrLOa4NqOOXF8+H9sbGxsZdmz4vePLrmwRbFFTY2NvY27H0ubGxsbGxsbGxs7MdcP7u+w6Z1J2ECAAAAAElFTkSuQmCC">
-        </ul>
-    
-
-    <!-- Tags (bookmark) -->
-    
-    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-        <i class="material-icons" role="presentation">bookmark</i>
-        <span class="visuallyhidden">bookmark</span>
-    </button>
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
-        <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/html/">html</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/html5/">html5</a>
-    </ul>
-    
-
-    <!-- Share -->
-    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-    <i class="material-icons" role="presentation">share</i>
-    <span class="visuallyhidden">share</span>
-</button>
-<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
-    
-
-    
-
-    <!-- Share Weibo -->
-    
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=WebSocket与Socket.io的理解&url=https://xpenh.github.io//2017/05/19/WebSocket与Socket.io的理解/index.html&pic=&searchPic=false&style=simple" target="_blank">
-            <li class="mdl-menu__item">
-                分享到微博
-            </li>
-        </a>
-    
-
-    <!-- Share Twitter -->
-    
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=WebSocket与Socket.io的理解&url=https://xpenh.github.io//2017/05/19/WebSocket与Socket.io的理解/index.html&via=xpenh" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
-
-    <!-- Share Facebook -->
-    
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://xpenh.github.io//2017/05/19/WebSocket与Socket.io的理解/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
-
-    <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://xpenh.github.io//2017/05/19/WebSocket与Socket.io的理解/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
-    
-
-    <!-- Share LinkedIn -->
-    
-
-    <!-- Share QQ -->
-    
-
-    <!-- Share Telegram -->
-    
-</ul>
-
-</div>
 
                 
 
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>WebSocket protocol是HTML5一种新的协议。它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于服务器推送技术的一种。</p>
+
+    
+        <div class="post-content_wrapper">
+            <p class="post-title">
+                WebSocket与Socket.io的理解
+            </p>
+            <p>WebSocket protocol是HTML5一种新的协议。它的最大特点就是，服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于服务器推送技术的一种。</p>
 <p><img src="http://i4.buimg.com/1949/4006b9c9772796b4.png" alt="scoket"></p>
 <p>HTTP设计的时候，比如浏览器直接发出请求，服务器才能响应。如果浏览器不发出request请求，服务器是不能主动找到浏览器，传输一些数据的。也就是说：浏览器必须主动请求，服务器才会发出响应。</p>
 <p>但是现在的web页面，对实时的要求很高：web看股票、篮球比赛图文直播、聊天室、站内信等等。<br>现在的做法基本都是长轮询，用通俗易懂的话来说，就是客户端不停的（setInterval）向服务器发送请求以获取最新的数据信息。这里的“不停”其实是有停止的，只是我们人眼无法分辨是否停止，它只是一种快速的停下然后又立即开始连接而已。浏览器每隔比如20秒都问一下服务器，有没有人给我发站内信。服务器是不能有新消息就主动通知浏览器的。</p>
@@ -412,18 +411,75 @@
 </ol>
 <p>为了建立一个 WebSocket 连接，客户端浏览器首先要向服务器发起一个 HTTP 请求，这个请求和通常的 HTTP 请求不同，包含了一些附加头信息，其中附加头信息”Upgrade: WebSocket”表明这是一个申请协议升级的 HTTP 请求，服务器端解析这些附加的头信息然后产生应答信息返回给客户端，客户端和服务器端的 WebSocket 连接就建立起来了，双方就可以通过这个连接通道自由的传递信息，并且这个连接会持续存在直到客户端或者服务器端的某一方主动的关闭连接。</p>
 <p>接下来谈谈socket.io。它是一个NodeJS用的npm包，简化了websocket的程序开发。不用socket.io也能开发websocket但是极其复杂，比如要设置HTTP头等等。下面是简单的demo。</p>
-<p>app.js:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">var express = require(<span class="string">'express'</span>);</div><div class="line">var app = express();</div><div class="line">var http = require(<span class="string">'http'</span>).Server(app);</div><div class="line">//服务器端存在了一个io对象：</div><div class="line">var io = require(<span class="string">"socket.io"</span>)(http);</div><div class="line"></div><div class="line">app.use(express.static(<span class="string">"public"</span>));</div><div class="line"></div><div class="line">app.get(<span class="string">'/'</span>, <span class="keyword">function</span>(req, res)&#123;</div><div class="line">  res.sendFile(__dirname + <span class="string">"/index.html"</span>);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">//增加了一个中间件：</div><div class="line">io.on(<span class="string">"connect"</span>,<span class="keyword">function</span>(socket)&#123;</div><div class="line">  //服务器端出现了一个socket对象</div><div class="line">  console.log(<span class="string">"有人connect了！~~"</span>);</div><div class="line"></div><div class="line">  socket.on(<span class="string">"ltxx"</span>,<span class="keyword">function</span>(info)&#123;</div><div class="line">      console.log(info);</div><div class="line">  &#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">http.listen(3000, <span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">  console.log(<span class="string">'监听3000端口'</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<p>index.html:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&lt;!doctype html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;title&gt;Socket.IO chat&lt;/title&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body&gt;</div><div class="line">    &lt;ul id=<span class="string">"messages"</span>&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">    &lt;form action=<span class="string">""</span>&gt;</div><div class="line">      &lt;input id=<span class="string">"m"</span>  /&gt;</div><div class="line">      &lt;button&gt;发布&lt;/button&gt;</div><div class="line">    &lt;/form&gt;</div><div class="line"></div><div class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"/socket.io/socket.io.js"</span>&gt;&lt;/script&gt;</div><div class="line">    &lt;script src=<span class="string">"/jquery-1.12.3.min.js"</span>&gt;&lt;/script&gt;</div><div class="line">    &lt;script&gt;</div><div class="line">      var socket = io();</div><div class="line">      $(<span class="string">"button"</span>).click(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">        //socket.emit(信息名字,信息值)</div><div class="line">        socket.emit(<span class="string">'ltxx'</span>, $(<span class="string">'#m'</span>).val());</div><div class="line"></div><div class="line">        //清空文本框</div><div class="line">        $(<span class="string">'#m'</span>).val(<span class="string">''</span>);</div><div class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">      &#125;)</div><div class="line">    &lt;/script&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>app.js:</p>
+<pre class=" language-bash"><code class="language-bash">var express <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+var app <span class="token operator">=</span> express<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+var http <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>.Server<span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">;</span>
+//服务器端存在了一个io对象：
+var io <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">"socket.io"</span><span class="token punctuation">)</span><span class="token punctuation">(</span>http<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app.use<span class="token punctuation">(</span>express.static<span class="token punctuation">(</span><span class="token string">"public"</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+
+app.get<span class="token punctuation">(</span><span class="token string">'/'</span>, function<span class="token punctuation">(</span>req, res<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  res.sendFile<span class="token punctuation">(</span>__dirname + <span class="token string">"/index.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+//增加了一个中间件：
+io.on<span class="token punctuation">(</span><span class="token string">"connect"</span>,function<span class="token punctuation">(</span>socket<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  //服务器端出现了一个socket对象
+  console.log<span class="token punctuation">(</span><span class="token string">"有人connect了！~~"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  socket.on<span class="token punctuation">(</span><span class="token string">"ltxx"</span>,function<span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console.log<span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+http.listen<span class="token punctuation">(</span>3000, function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'监听3000端口'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>index.html:</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span>
+<span class="token operator">&lt;</span>html<span class="token operator">></span>
+  <span class="token operator">&lt;</span>head<span class="token operator">></span>
+    <span class="token operator">&lt;</span>title<span class="token operator">></span>Socket.IO chat<span class="token operator">&lt;</span>/title<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/head<span class="token operator">></span>
+  <span class="token operator">&lt;</span>body<span class="token operator">></span>
+    <span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">"messages"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>/ul<span class="token operator">></span>
+    <span class="token operator">&lt;</span>form action<span class="token operator">=</span><span class="token string">""</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>input id<span class="token operator">=</span><span class="token string">"m"</span>  /<span class="token operator">></span>
+      <span class="token operator">&lt;</span>button<span class="token operator">></span>发布<span class="token operator">&lt;</span>/button<span class="token operator">></span>
+    <span class="token operator">&lt;</span>/form<span class="token operator">></span>
+
+    <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/socket.io/socket.io.js"</span><span class="token operator">></span><span class="token operator">&lt;</span>/script<span class="token operator">></span>
+    <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"/jquery-1.12.3.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span>/script<span class="token operator">></span>
+    <span class="token operator">&lt;</span>script<span class="token operator">></span>
+      var socket <span class="token operator">=</span> io<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">$(</span><span class="token string">"button"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span>function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        //socket.emit<span class="token punctuation">(</span>信息名字,信息值<span class="token punctuation">)</span>
+        socket.emit<span class="token punctuation">(</span><span class="token string">'ltxx'</span>, <span class="token punctuation">$(</span><span class="token string">'#m'</span><span class="token punctuation">)</span>.val<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+
+        //清空文本框
+        <span class="token punctuation">$(</span><span class="token string">'#m'</span><span class="token punctuation">)</span>.val<span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token operator">&lt;</span>/script<span class="token operator">></span>
+  <span class="token operator">&lt;</span>/body<span class="token operator">></span>
+<span class="token operator">&lt;</span>/html<span class="token operator">></span>
+</code></pre>
 <p>浏览器emit了信息，服务器就能listen到。服务器listen使用on函数。</p>
 <p>服务器要把自己收到的信息，再次broadcast出去，然后让所有的html页面都能够收听服务器的广播即可。</p>
 <p><img src="http://i4.buimg.com/1949/16cebd69deef1eae.png" alt="scoket"></p>
 
-    
-
+        </div>
     
 </div>
 
 
+                
+                    <!-- Paradox Post Info -->
+                    
                 
 
                 <!-- Post Comments -->
@@ -450,7 +506,7 @@
     <!-- Next Nav -->
     
         <a href="/2017/05/15/学习 -ECMAScript 6 -let命令/" id="post_nav-older" class="next-content">
-            旧篇
+            Older
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
@@ -465,314 +521,23 @@
 
 
                     
-                        <!-- Overlay For Active Sidebar -->
-<div class="sidebar-overlay"></div>
-
-<!-- Material sidebar -->
-<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
-    <div id="sidebar-main">
-        <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
-    <!-- Top bar -->
-    <div class="top-bar"></div>
-
-    <!-- Sidebar toggle button -->
-    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
-        <i class="material-icons">clear_all</i>
-        <span class="mdl-button__ripple-container">
-            <span class="mdl-ripple">
-            </span>
-        </span>
-    </button>
-
-    <!-- Sidebar Avatar -->
-    <div class="sidebar-image">
-        <img src="/img/avatar.png" alt="xpenh's avatar">
-    </div>
-
-    <!-- Sidebar Email -->
-    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        xpenh@outlook.com
-        <b class="caret"></b>
-    </a>
-</div>
-
-
-        <!-- Sidebar Navigation  -->
-        <ul class="nav sidebar-nav">
-    <!-- User dropdown  -->
-    <li class="dropdown">
-        <ul id="settings-dropdown" class="dropdown-menu">
-            
-                <li>
-                    <a href="http://uhhuh.me/" target="_blank" title="uhhuh.me">
-                        
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">touch_app</i>
-                        
-                        uhhuh.me
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="#" target="_blank" title="Email Me">
-                        
-                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
-                        
-                        Email Me
-                    </a>
-                </li>
-            
-        </ul>
-    </li>
-
-    <!-- Homepage -->
-    
-        <li id="sidebar-first-li">
-            <a href="/" target="_self">
-                
-                    <i class="material-icons sidebar-material-icons">home</i>
-                
-                主页
-            </a>
-        </li>
-        
-    
-
-    <!-- Archives  -->
-    
-        <li class="dropdown">
-            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-                
-                    <i class="material-icons sidebar-material-icons">inbox</i>
-                
-                    归档
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-            <li>
-                <a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
-            </ul>
-        </li>
-        
-    
-
-    <!-- Categories  -->
-    
-        <li class="dropdown">
-            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-                
-                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
-                
-                分类
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li>
-                <a class="sidebar_archives-link" href="/categories/ES6/">ES6<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/html5/">html5<span class="sidebar_archives-count">1</span></a>
-            </ul>
-        </li>
-        
-    
-
-    <!-- Pages  -->
-    
-        <li>
-            <a href="/about" title="关于我">
-                
-                    <i class="material-icons sidebar-material-icons">person</i>
-                
-                关于我
-            </a>
-        </li>
-        
-    
-
-    <!-- Article Number  -->
-    
-        <li>
-            <a href="/archives">
-                文章总数
-                <span class="sidebar-badge">2</span>
-            </a>
-        </li>
-        
-    
-</ul>
-
-
-        <!-- Sidebar Footer -->
-        <!--
-I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
-If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
-It will not impact the appearance and can give developers a lot of support :)
-
-很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
-如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
-它不会影响美观并可以给开发者很大的支持和动力。 :)
--->
-
-<!-- Sidebar Divider -->
-
-    <div class="sidebar-divider"></div>
-
-
-<!-- Theme Material -->
-
-
-<!-- Help & Support -->
-<!--
-
--->
-
-<!-- Feedback -->
-<!--
-
--->
-
-<!-- About Theme -->
-<!--
-
--->
-
-    </div>
-
-    <!-- Sidebar Image -->
-    
-
-</aside>
-
-                    
-
-                    
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
     
-        <!-- Paradox Footer Left Section -->
-        <div class="mdl-mini-footer--left-section sns-list">
-    <!-- Twitter -->
-    
-        <a href="https://twitter.com/iamxph" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
-                <span class="visuallyhidden">Twitter</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Facebook -->
-    
-        <a href="https://www.facebook.com/facebook" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
-                <span class="visuallyhidden">Facebook</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Google + -->
-    
-        <a href="https://plus.google.com/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
-                <span class="visuallyhidden">Google Plus</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Weibo -->
-    
-        <a href="http://weibo.com/274957777" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-weibo.svg);">
-                <span class="visuallyhidden">Weibo</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Instagram -->
-    
-        <a href="https://www.instagram.com/11.23.93/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-instagram.svg);">
-                <span class="visuallyhidden">Instagram</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Tumblr -->
-    
-
-    <!-- Github -->
-    
-        <a href="https://github.com/xpenh" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.svg);">
-                <span class="visuallyhidden">Github</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- LinkedIn -->
-    
-
-    <!-- Zhihu -->
-    
-        <a href="https://www.zhihu.com/people/xpenh" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-zhihu.svg);">
-                <span class="visuallyhidden">Zhihu</span>
-            </button><!--
-     --></a>
-    
-
-    <!-- Bilibili -->
-    
-
-    <!-- Telegram -->
-    
-</div>
-
-
-        <!--Copyright-->
-        <div id="copyright">
-            Copyright&nbsp;©&nbsp;
-            <script type="text/javascript">
-                var fd = new Date();
-                document.write(fd.getFullYear());
-            </script>
-            &nbsp;Xpenh's Blog
-        </div>
-
-        <!-- Paradox Footer Right Section -->
-
-        <!--
-        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
-        It will not impact the appearance and can give developers a lot of support :)
-
-        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
-        它不会影响美观并可以给开发者很大的支持。 :)
-        -->
-
-        <div class="mdl-mini-footer--right-section">
-            <div>
-                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
-                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
-            </div>
-        </div>
-    
 </footer>
 
 
                     <!-- Import File -->
 
-    <script src="/js/lazyload.min.js"></script>
-    <script src="/js/js.min.js"></script>
+    <script src="https://xpenh.github.io/js/lazyload.min.js"></script>
+    <script src="https://xpenh.github.io/js/js.min.js"></script>
 
 
 
-    <script src="/js/nprogress.js"></script>
+    <script src="https://xpenh.github.io/js/nprogress.js"></script>
 
 
 <script type="text/javascript">
@@ -799,7 +564,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
     
-        <script src="/js/smoothscroll.js"></script>
+        <script src="https://xpenh.github.io/js/smoothscroll.js"></script>
     
 
 
