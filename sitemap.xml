@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xpenh.github.io/2017/05/25/ECMAScript%206%20%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
-    
-    <lastmod>2017-05-25T07:22:14.887Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://xpenh.github.io/2017/05/19/WebSocket%E4%B8%8ESocket.io%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
     
-    <lastmod>2017-05-25T07:16:06.761Z</lastmod>
+    <lastmod>2017-05-25T07:28:34.665Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://xpenh.github.io/2017/05/15/ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
     
-    <lastmod>2017-05-25T07:00:58.611Z</lastmod>
+    <lastmod>2017-05-25T07:28:03.364Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xpenh.github.io/2017/05/25/ECMAScript%206%20%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    
+    <lastmod>2017-05-25T07:24:50.004Z</lastmod>
     
   </url>
   
