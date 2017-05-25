@@ -412,61 +412,61 @@
 <p>为了建立一个 WebSocket 连接，客户端浏览器首先要向服务器发起一个 HTTP 请求，这个请求和通常的 HTTP 请求不同，包含了一些附加头信息，其中附加头信息”Upgrade: WebSocket”表明这是一个申请协议升级的 HTTP 请求，服务器端解析这些附加的头信息然后产生应答信息返回给客户端，客户端和服务器端的 WebSocket 连接就建立起来了，双方就可以通过这个连接通道自由的传递信息，并且这个连接会持续存在直到客户端或者服务器端的某一方主动的关闭连接。</p>
 <p>接下来谈谈socket.io。它是一个NodeJS用的npm包，简化了websocket的程序开发。不用socket.io也能开发websocket但是极其复杂，比如要设置HTTP头等等。下面是简单的demo。</p>
 <p>app.js:</p>
-<pre class=" language-bash"><code class="language-bash">var express <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-var app <span class="token operator">=</span> express<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-var http <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>.Server<span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">;</span>
-//服务器端存在了一个io对象：
-var io <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">"socket.io"</span><span class="token punctuation">)</span><span class="token punctuation">(</span>http<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Server</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//服务器端存在了一个io对象：</span>
+<span class="token keyword">var</span> io <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"socket.io"</span><span class="token punctuation">)</span><span class="token punctuation">(</span>http<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-app.use<span class="token punctuation">(</span>express.static<span class="token punctuation">(</span><span class="token string">"public"</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>express<span class="token punctuation">.</span><span class="token keyword">static</span><span class="token punctuation">(</span><span class="token string">"public"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-app.get<span class="token punctuation">(</span><span class="token string">'/'</span>, function<span class="token punctuation">(</span>req, res<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  res.sendFile<span class="token punctuation">(</span>__dirname + <span class="token string">"/index.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  res<span class="token punctuation">.</span><span class="token function">sendFile</span><span class="token punctuation">(</span>__dirname <span class="token operator">+</span> <span class="token string">"/index.html"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-//增加了一个中间件：
-io.on<span class="token punctuation">(</span><span class="token string">"connect"</span>,function<span class="token punctuation">(</span>socket<span class="token punctuation">)</span><span class="token punctuation">{</span>
-  //服务器端出现了一个socket对象
-  console.log<span class="token punctuation">(</span><span class="token string">"有人connect了！~~"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//增加了一个中间件：</span>
+io<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"connect"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>socket<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">//服务器端出现了一个socket对象</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"有人connect了！~~"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-  socket.on<span class="token punctuation">(</span><span class="token string">"ltxx"</span>,function<span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">{</span>
-      console.log<span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"ltxx"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-http.listen<span class="token punctuation">(</span>3000, function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  console.log<span class="token punctuation">(</span><span class="token string">'监听3000端口'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+http<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'监听3000端口'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>index.html:</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span>doctype html<span class="token operator">></span>
 <span class="token operator">&lt;</span>html<span class="token operator">></span>
   <span class="token operator">&lt;</span>head<span class="token operator">></span>
-    <span class="token operator">&lt;</span>title<span class="token operator">></span>Socket.IO chat<span class="token operator">&lt;</span>/title<span class="token operator">></span>
-  <span class="token operator">&lt;</span>/head<span class="token operator">></span>
+    <span class="token operator">&lt;</span>title<span class="token operator">></span>Socket<span class="token punctuation">.</span>IO chat<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">></span>
   <span class="token operator">&lt;</span>body<span class="token operator">></span>
     <span class="token operator">&lt;</span>ul id<span class="token operator">=</span><span class="token string">"messages"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>/ul<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
     <span class="token operator">&lt;</span>form action<span class="token operator">=</span><span class="token string">""</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>input id<span class="token operator">=</span><span class="token string">"m"</span>  /<span class="token operator">></span>
-      <span class="token operator">&lt;</span>button<span class="token operator">></span>发布<span class="token operator">&lt;</span>/button<span class="token operator">></span>
-    <span class="token operator">&lt;</span>/form<span class="token operator">></span>
+      <span class="token operator">&lt;</span>input id<span class="token operator">=</span><span class="token string">"m"</span>  <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>button<span class="token operator">></span>发布<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">></span>
 
-    <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/socket.io/socket.io.js"</span><span class="token operator">></span><span class="token operator">&lt;</span>/script<span class="token operator">></span>
-    <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"/jquery-1.12.3.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span>/script<span class="token operator">></span>
+    <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/socket.io/socket.io.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+    <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"/jquery-1.12.3.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
     <span class="token operator">&lt;</span>script<span class="token operator">></span>
-      var socket <span class="token operator">=</span> io<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">$(</span><span class="token string">"button"</span><span class="token punctuation">)</span>.click<span class="token punctuation">(</span>function<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        //socket.emit<span class="token punctuation">(</span>信息名字,信息值<span class="token punctuation">)</span>
-        socket.emit<span class="token punctuation">(</span><span class="token string">'ltxx'</span>, <span class="token punctuation">$(</span><span class="token string">'#m'</span><span class="token punctuation">)</span>.val<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> socket <span class="token operator">=</span> <span class="token function">io</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"button"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//socket.emit(信息名字,信息值)</span>
+        socket<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'ltxx'</span><span class="token punctuation">,</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#m'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        //清空文本框
-        <span class="token punctuation">$(</span><span class="token string">'#m'</span><span class="token punctuation">)</span>.val<span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//清空文本框</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#m'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
       <span class="token punctuation">}</span><span class="token punctuation">)</span>
-    <span class="token operator">&lt;</span>/script<span class="token operator">></span>
-  <span class="token operator">&lt;</span>/body<span class="token operator">></span>
-<span class="token operator">&lt;</span>/html<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">></span>
 </code></pre>
 <p>浏览器emit了信息，服务器就能listen到。服务器listen使用on函数。</p>
 <p>服务器要把自己收到的信息，再次broadcast出去，然后让所有的html页面都能够收听服务器的广播即可。</p>
