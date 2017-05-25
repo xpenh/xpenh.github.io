@@ -9,7 +9,7 @@
     
     <title>
         
-            学习 -ECMAScript 6 -let命令 | 
+            ECMAScript 6 -let命令 | 
         
         Xpenh&#39;s Blog
     </title>
@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="xpenh">
     <meta name="description" content="null">
-    <meta name="keywords" content="许鹏辉,xpenh,blog,前端,web development,IT,程序员,代码,ES6,javascript">
+    <meta name="keywords" content="许鹏辉,xpenh,blog,前端,web development,IT,程序员,代码,javascript,ES6">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
@@ -59,9 +59,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://xpenh.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="学习 -ECMAScript 6 -let命令 | Xpenh&#39;s Blog">
+    <meta property="og:title" content="ECMAScript 6 -let命令 | Xpenh&#39;s Blog">
     <meta property="og:description" content="null">
-    <meta property="og:article:tag" content="ES6"> <meta property="og:article:tag" content="javascript"> 
+    <meta property="og:article:tag" content="javascript"> <meta property="og:article:tag" content="ES6"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -398,53 +398,53 @@
     
         <div class="post-content_wrapper">
             <p class="post-title">
-                学习 -ECMAScript 6 -let命令
+                ECMAScript 6 -let命令
             </p>
             <p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">ES6</a> 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。</p>
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">{</span>
-  <span class="token keyword">let</span> a <span class="token operator">=</span> 10<span class="token punctuation">;</span>
-  var b <span class="token operator">=</span> 1<span class="token punctuation">;</span>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+  <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-a // ReferenceError: a is not defined.
-b // 1
+a <span class="token comment" spellcheck="true">// ReferenceError: a is not defined.</span>
+b <span class="token comment" spellcheck="true">// 1</span>
 </code></pre>
 <p>上面代码在代码块之中，分别用let和var声明了两个变量。然后在代码块之外调用这两个变量，结果let声明的变量报错，var声明的变量返回了正确的值。这表明，let声明的变量只在它所在的代码块有效。</p>
 <p>for循环的计数器，就很合适使用let命令。</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token punctuation">(</span>let i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> 10<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 
-console.log<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-//ReferenceError: i is not defined
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//ReferenceError: i is not defined</span>
 </code></pre>
 <p>上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。</p>
 <p>下面的代码如果使用var，最后输出的是10。</p>
-<pre class=" language-bash"><code class="language-bash">var a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">for</span> <span class="token punctuation">(</span>var i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> 10<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console.log<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-a<span class="token punctuation">[</span>6<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> // 10
+a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 10</span>
 </code></pre>
 <p>上面代码中，变量i是var声明的，在全局范围内都有效，所以全局只有一个变量i。每一次循环，变量i的值都会发生改变，而循环内被赋给数组a的function在运行时，会通过闭包读到这同一个变量i，导致最后输出的是最后一轮的i的值，也就是10。</p>
 <p>而如果使用let，声明的变量仅在块级作用域内有效，最后输出的是6。</p>
-<pre class=" language-bash"><code class="language-bash">var a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">for</span> <span class="token punctuation">(</span>let i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> 10<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console.log<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-a<span class="token punctuation">[</span>6<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> // 6
+a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 6</span>
 </code></pre>
 <p>上面代码中，变量i是let声明的，当前的i只在本轮循环有效，所以每一次循环的i其实都是一个新的变量，所以最后输出的是6。你可能会问，如果每一轮循环的变量i都是重新声明的，那它怎么知道上一轮循环的值，从而计算出本轮循环的值？这是因为 JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量i时，就在上一轮循环的基础上进行计算。</p>
 <p>另外，for循环还有一个特别之处，就是循环语句部分是一个父作用域，而循环体内部是一个单独的子作用域。</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token punctuation">(</span>let i <span class="token operator">=</span> 0<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> 3<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token string">'abc'</span><span class="token punctuation">;</span>
-  console.log<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-// abc
-// abc
-// abc
+<span class="token comment" spellcheck="true">// abc</span>
+<span class="token comment" spellcheck="true">// abc</span>
+<span class="token comment" spellcheck="true">// abc</span>
 </code></pre>
 <p>上面代码输出了3次abc，这表明函数内部的变量i和外部的变量i是分离的。</p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">ECMAScript 6 入门 - 阮一峰</a></p>

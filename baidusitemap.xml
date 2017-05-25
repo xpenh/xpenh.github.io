@@ -4,16 +4,38 @@
 
     
   <url>
-    <loc>https://xpenh.github.io/2017/05/15/%E5%AD%A6%E4%B9%A0%20-ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2017-05-25T03:05:57.036Z</lastmod>
+    <loc>https://xpenh.github.io/2017/05/25/ECMAScript%206%20%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    <lastmod>2017-05-25T07:07:37.186Z</lastmod>
     <data>
         <display>
-        <title>学习 -ECMAScript 6 -let命令</title>
-        <pubTime>2017-05-15T06:32:15.167Z</pubTime>
+        <title>ECMAScript 6 新特性</title>
+        <pubTime>2017-05-25T06:33:48.522Z</pubTime>
         
+        <tag>javascript</tag>
+         
         <tag>ES6</tag>
          
+         
+           
+             
+              <breadCrumb title="ES6" url="https://xpenh.github.io/categories/ES6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xpenh.github.io/2017/05/15/ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-05-25T07:00:58.611Z</lastmod>
+    <data>
+        <display>
+        <title>ECMAScript 6 -let命令</title>
+        <pubTime>2017-05-15T06:32:15.167Z</pubTime>
+        
         <tag>javascript</tag>
+         
+        <tag>ES6</tag>
          
          
            
