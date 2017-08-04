@@ -9,7 +9,7 @@
     
     <title>
         
-            分类: ES6 | 
+            使用flexible完成H5终端适配 | 
         
         Todd&#39;s Blog
     </title>
@@ -35,7 +35,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Todd">
     <meta name="description" content="null">
-    <meta name="keywords" content="许鹏辉,xpenh,Todd,blog,前端,web development,IT,it,程序员,代码">
+    <meta name="keywords" content="许鹏辉,xpenh,Todd,blog,前端,web development,IT,it,程序员,代码,技术项,html,html5">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
@@ -61,9 +61,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://xpenh.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="分类: ES6 | Todd&#39;s Blog">
+    <meta property="og:title" content="使用flexible完成H5终端适配 | Todd&#39;s Blog">
     <meta property="og:description" content="null">
-    
+    <meta property="og:article:tag" content="技术项"> <meta property="og:article:tag" content="html"> <meta property="og:article:tag" content="html5"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -372,27 +372,29 @@
 
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
-    
-        
     
 
-    <!-- Normal Post -->
-    
-        
-            
-            
-                <!-- Isolation Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post_entry Header -->
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+
+
+    <!-- Isolation Post Header -->
+    <!-- Post thumbnail -->
     
         <!-- Post Header Info -->
-        <div class="post_entry-header_info without-thumbnail">
+        <div class="post-header_info without-thumbnail">
             <!-- Author Avatar & Name -->
             <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="Todd's avatar">
             <span class="name-span">Todd</span>
@@ -403,171 +405,102 @@
     
         </div>
 
-    <!-- Post_entry Content -->
-    <div class="post_entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
-        <!-- Post Title -->
-        <p class="post_entry-title">
-            <a href="/2017/06/06/ECMAScript 6 -const命令/">ECMAScript 6 -const命令</a>
-        </p>
 
-        <!-- Post Excerpt -->
-        <p class="post_entry-excerpt">
-            
+
                 
 
-            
-            &nbsp;&nbsp;&nbsp;
-            <span>
-                <a href="/2017/06/06/ECMAScript 6 -const命令/" target="_self">Continue Reading</a>
-            </span>
-        </p>
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
 
-        <!-- Post Tags -->
-        <ul class="post_entry-tags-list"><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/ES6/">ES6</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/javascript/">javascript</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/技术项/">技术项</a></li></ul>
-    </div>
+    
+        <div class="post-content_wrapper">
+            <p class="post-title">
+                使用flexible完成H5终端适配
+            </p>
+            <p>昨天做了一个H5的分享页，由于页面本身需求不大所以没有考虑bootstrap，而是采用了淘宝的<a href="https://github.com/amfe/lib-flexible" target="_blank" rel="external">flexible</a>方案。</p>
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p>在页面顶部引入依赖库：</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://g.tbcdn.cn/mtb/lib-flexible/{{version}}/??flexible_css.js,flexible.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>注意要在<strong>所有资源加载之前</strong>执行这个js，之后页面的元素，都可以用rem来设置，而html上的<strong>font-size</strong>就是rem的基准像素。</p>
+<h3 id="设计图中的px转换成rem"><a href="#设计图中的px转换成rem" class="headerlink" title="设计图中的px转换成rem"></a>设计图中的px转换成rem</h3><p>元素的尺寸换算，只需要<strong>原始px值</strong>除以<strong>rem基准值</strong>。</p>
+<h3 id="字体不建议使用rem"><a href="#字体不建议使用rem" class="headerlink" title="字体不建议使用rem"></a>字体不建议使用rem</h3><p>字体仍然使用px为单位。如果项目中有标题之类的，可以使用rem。</p>
+<h3 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h3><p>关于文本和图片的居中<br>html:</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>open_btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>打开映社，发现更多精彩<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>images/open.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>css:</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.open_btn</span></span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#FFF</span><span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#393a3a</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">1.26</span>rem<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">0.41</span>rem<span class="token punctuation">;</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0.3</span>rem <span class="token number">0.37</span>rem <span class="token number">2.06</span>rem <span class="token number">0.37</span>rem<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0.11</span>rem<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">1.26</span>rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.open_btn</span> h2</span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">1.26</span>rem<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.open_btn</span> img</span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">0.44</span>rem<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">0.44</span>rem<span class="token punctuation">;</span>
+  <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 
-    <!-- Post_entry Footer -->
-    <div class="post_entry-footer">
-        <div class="post_entry-footer-border"></div>
-        <div class="post_entry-footer-info">
-            <div class="post_entry-footer-date">
-                6月 06, 2017
-            </div>
-            <div class="post_entry-footer-comment">
-                
-                
-            </div>
         </div>
-    </div>
+    
 </div>
 
-            
-        
-    
-        
-            
-            
-                <!-- Isolation Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post_entry Header -->
-    
-        <!-- Post Header Info -->
-        <div class="post_entry-header_info without-thumbnail">
-            <!-- Author Avatar & Name -->
-            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="Todd's avatar">
-            <span class="name-span">Todd</span>
-        </div>
 
-        <!-- Null Thumbnail -->
-        <div class="post_thumbnail-null">
-    
-        </div>
-
-    <!-- Post_entry Content -->
-    <div class="post_entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
-        <!-- Post Title -->
-        <p class="post_entry-title">
-            <a href="/2017/05/25/ECMAScript 6 新特性/">ECMAScript 6 新特性</a>
-        </p>
-
-        <!-- Post Excerpt -->
-        <p class="post_entry-excerpt">
-            
-                部署进度
-            
-            &nbsp;&nbsp;&nbsp;
-            <span>
-                <a href="/2017/05/25/ECMAScript 6 新特性/" target="_self">Continue Reading</a>
-            </span>
-        </p>
-
-        <!-- Post Tags -->
-        <ul class="post_entry-tags-list"><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/ES6/">ES6</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/javascript/">javascript</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/技术项/">技术项</a></li></ul>
-    </div>
-
-    <!-- Post_entry Footer -->
-    <div class="post_entry-footer">
-        <div class="post_entry-footer-border"></div>
-        <div class="post_entry-footer-info">
-            <div class="post_entry-footer-date">
-                5月 25, 2017
-            </div>
-            <div class="post_entry-footer-comment">
                 
+                    <!-- Paradox Post Info -->
+                    
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
                 
             </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/06/06/ECMAScript 6 -const命令/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
         </div>
     </div>
-</div>
 
-            
-        
-    
-        
-            
-            
-                <!-- Isolation Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post_entry Header -->
-    
-        <!-- Post Header Info -->
-        <div class="post_entry-header_info without-thumbnail">
-            <!-- Author Avatar & Name -->
-            <img src="/img/avatar.png" class="avatar-img" width="44px" height="44px" alt="Todd's avatar">
-            <span class="name-span">Todd</span>
-        </div>
-
-        <!-- Null Thumbnail -->
-        <div class="post_thumbnail-null">
-    
-        </div>
-
-    <!-- Post_entry Content -->
-    <div class="post_entry-content mdl-color-text--grey-600 mdl-card__supporting-text">
-        <!-- Post Title -->
-        <p class="post_entry-title">
-            <a href="/2017/05/15/ECMAScript 6 -let命令/">ECMAScript 6 -let命令</a>
-        </p>
-
-        <!-- Post Excerpt -->
-        <p class="post_entry-excerpt">
-            
-                
-
-            
-            &nbsp;&nbsp;&nbsp;
-            <span>
-                <a href="/2017/05/15/ECMAScript 6 -let命令/" target="_self">Continue Reading</a>
-            </span>
-        </p>
-
-        <!-- Post Tags -->
-        <ul class="post_entry-tags-list"><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/ES6/">ES6</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/javascript/">javascript</a></li><li class="post_entry-tags-list-item"><a class="post_entry-tags-list-link" href="/tags/技术项/">技术项</a></li></ul>
-    </div>
-
-    <!-- Post_entry Footer -->
-    <div class="post_entry-footer">
-        <div class="post_entry-footer-border"></div>
-        <div class="post_entry-footer-info">
-            <div class="post_entry-footer-date">
-                5月 15, 2017
-            </div>
-            <div class="post_entry-footer-comment">
-                
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-            
-        
-    
-
-    
-
-    
-</div>
 
 
                     

@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xpenh.github.io/2017/08/03/%E4%BD%BF%E7%94%A8flexible%E5%AE%8C%E6%88%90H5%E7%BB%88%E7%AB%AF%E9%80%82%E9%85%8D/</loc>
+    
+    <lastmod>2017-08-04T03:01:09.607Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xpenh.github.io/2017/05/19/WebSocket%E4%B8%8ESocket.io%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
+    
+    <lastmod>2017-08-03T03:31:30.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xpenh.github.io/2017/05/25/ECMAScript%206%20%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    
+    <lastmod>2017-08-03T03:31:27.453Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xpenh.github.io/2017/05/15/ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2017-08-03T03:31:23.518Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xpenh.github.io/2017/06/06/ECMAScript%206%20-const%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2017-08-03T03:31:16.983Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xpenh.github.io/about/index.html</loc>
     
     <lastmod>2017-06-26T02:49:24.940Z</lastmod>
@@ -16,37 +51,9 @@
   </url>
   
   <url>
-    <loc>https://xpenh.github.io/2017/06/06/ECMAScript%206%20-const%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2017-06-06T07:16:49.397Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xpenh.github.io/2017/05/15/ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2017-06-06T06:57:59.357Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://xpenh.github.io/gallery/index.html</loc>
     
     <lastmod>2017-05-26T06:45:45.975Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xpenh.github.io/2017/05/19/WebSocket%E4%B8%8ESocket.io%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
-    
-    <lastmod>2017-05-25T07:28:34.665Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xpenh.github.io/2017/05/25/ECMAScript%206%20%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
-    
-    <lastmod>2017-05-25T07:24:50.004Z</lastmod>
     
   </url>
   
