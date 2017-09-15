@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://xpenh.github.io/about/index.html</loc>
+    
+    <lastmod>2017-09-15T03:26:27.313Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xpenh.github.io/2017/08/07/%E6%BB%A1%E5%8F%A3/</loc>
     
     <lastmod>2017-08-14T03:57:53.111Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>https://xpenh.github.io/2017/05/15/ECMAScript%206%20-let%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2017-08-03T03:31:23.518Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xpenh.github.io/about/index.html</loc>
-    
-    <lastmod>2017-06-26T02:49:24.940Z</lastmod>
     
   </url>
   
